@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
   <style>
-ul {
+ul.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -13,11 +13,11 @@ ul {
   background-color: #333333;
 }
 
-li {
+li.menu {
   float: left;
 }
 
-li a {
+li.menu a {
   display: block;
   color: white;
   text-align: center;
@@ -25,7 +25,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+li.menu a:hover {
   background-color: #111111;
 }
 </style>
@@ -34,16 +34,22 @@ li a:hover {
   </head>
 <body>
   <h1>MENU of Options</h1>
-  <ul>
-    <li><a target=_blank href="https://drive.google.com/file/d/1a8czED4NJ9lQItk1I-Z-MJ3I0YTEcTI-/view?usp=sharing"> LMS download (Canvas)</a></li>
-    <li><a target=_blank href="https://www.worldviz.com/releases/vizard-7"> Link to Vizard</a></li>
-    <li><a target=_blank href="https://youtube.com/playlist?list=PLyyO_OuisM10jSXQIGN1rTDtIFu0uI_2s">Link to Play list</a></li>
+  <ul class="menu">
+    <li class="menu"><a target=_blank href="https://drive.google.com/file/d/1a8czED4NJ9lQItk1I-Z-MJ3I0YTEcTI-/view?usp=sharing"> LMS download (Canvas)</a></li>
+    <li class="menu"><a target=_blank href="https://www.worldviz.com/releases/vizard-7"> Vizard Download</a></li>
+    <li class="menu"><a target=_blank href="https://youtube.com/playlist?list=PLyyO_OuisM10jSXQIGN1rTDtIFu0uI_2s">Full course Play list</a></li>
+    <li class ="menu"> <img width=20% src="peteandCQR.png"></li>
   </ul>
   
-  <h2>Playground video</h2>
+  <h2>Playground Guide</h2>
+  <ul>
+    <li>Download and install Vizard 7 from menu</li>
+    <li>Watch the video below</br>
   <span align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/422QyoY7za0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
   </br>
-  <img src="peteandCQR.png">
+  </li>
+  <li>Show off your design on the screen</li>
+</ul>
   
   </body>
 </html>
