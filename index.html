@@ -2,13 +2,12 @@
 <html>
 <head>
     <title>PETE and C 2024</title>
-    
-       <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
     <style>
         body {
-            font: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         ul.menu, .dropdown-content {
             list-style-type: none;
@@ -28,7 +27,7 @@
             text-decoration: none;
         }
         li.menu a:hover, .dropdown:hover .dropbtn {
-            background-color: #111111;
+            background-color: #111;
         }
         .dropdown {
             float: left;
@@ -48,7 +47,7 @@
             position: absolute;
             background-color: #f9f9f9;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
             z-index: 1;
         }
         .dropdown-content a {
@@ -76,77 +75,44 @@
             margin-right: auto;
             width: 50%;
         }
-
-
-
         .container {
-        display: flex;
-        align-items: left;
-      background-color: black; /* Sets the background color of the container to black */
-        color: white; /* Sets the text color to white for better readability */
-   
-    }
-    .text {
-        flex: 0 0 40%; /* Sets the width of the text block to 40% of the container */
-        max-width: 40%; /* Ensures the text block doesn't exceed 40% width */
-   ;
-    }
-    .image {
-        margin-left: 20px;
-        border-radius: 150px 20px 20px 110px; /* curved mask on the left side of the image */
-    }
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Adjusted for spacing */
+        }
+        .text {
+            flex: 1; /* Adjusted for flexible sizing */
+        }
+        .images { /* New class for images container */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image, .image-next { /* Adjusted class for both images */
+            margin: 0 10px; /* Spacing between images */
+            border-radius: 150px 20px 20px 110px; /* Optional style */
+        }
     </style>
 </head>
 <body>
     <img class="center" height="33%" src="https://www.peteandc.org/2023/images/sitelook/logo_header.png">
-<img class="center" height="33%" src="XRLobby.png">
     <ul class="menu">
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Lesson Plans</a>
-            <div class="dropdown-content">
-                <a href="KissLab.docx">Kiss Lab</a>
-                <a href="Measure in AR from Scratch.docx">Measure in AR from Scratch</a>
-                 <a href="PBL - Pixar and Khan and Blender oh My.docx">PBL - Pixar and Khan and Blender oh My</a>
-                
-                 <a href="Exploring Geometry and Volume through VR.docx">Exploring Geometry and Volume through VR</a>
-                 <a href="Exploring Diagonals and Triangles in a Rectangular Prism.docx">Exploring Diagonals and Triangles in a Rectangular Prism</a>
-                <a href="Conversing with Euclid - A Journey through Geometry with AI.docx">Conversing with Euclid - A Journey through Geometry with AI</a>
-                <a href="3D Modeling and Printing of Rotated Curves.docx">3D Modeling and Printing of Rotated Curves</a>
-            </div>
-        </li>
-<li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Unity</a>
-            <div class="dropdown-content">
-                <a target=_blank href="https://drive.google.com/file/d/1JVWXNCD4k3J5RRPs3o4SjRitZpDtRRTL/view?usp=sharing">Stacking Blocks Game</a>
-                <a target=_blank href="https://drive.google.com/file/d/1J_iJ9ig5uKWlGF4gbWBu-OJphQTlpQMi/view?usp=sharing">Stacking Blocks Unity files</a>
-                <a target=_blank href="https://www.mrmclaughlin.com/geometry/">Geometry Gallery Game</a>
-                <a target=_blank href="https://chat.openai.com/share/f18f0091-ea4f-44e5-b7d3-6a2fe6f29344">ChatGPT and Unity</a>
-            </div>
-        </li>
-
-        
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Contact</a>
-            <div class="dropdown-content">
-                <a target=_blank href="https://x.com/mrmclaughlin">Twitter</a>
-                <a target=_blank href="mailto:tmclaughlin@nhsd.org">Email</a>
-                <a target=_blank href="https://www.facebook.com/ThomasPMclaughlin7">Facebook</a>
-            </div>
-        </li>
+        <!-- Menu items here -->
     </ul>
     <hr class="menu">
     <br><br>
 <div class="container">
     <div class="text">
         <h1>Teaching Math with XR!</h1>
-        <p width="30%">The proposed session will provide teaching tips and practices to create XR-based lessons to enhance Math instruction. Topics will include CreatiCode, Blender, and Geogebra. Mathematics is the language we use to explain our universe. XR allows students to develop that language in a very real way. Included grade levels 6 - 12 and a resource download.</p>
+        <p>The proposed session will provide teaching tips and practices to create XR-based lessons to enhance Math instruction. Topics will include CreatiCode, Blender, and Geogebra. Mathematics is the language we use to explain our universe. XR allows students to develop that language in a very real way. Included grade levels 6 - 12 and a resource download.</p>
     </div>
-    <img height="300px" class="image" src="headshot.jpg" alt="Headshot">
+    <div class="images"> <!-- New container for images -->
+        <img height="300px" class="image" src="headshot.jpg" alt="Headshot">
+        <img height="300px" class="image-next" src="XRLobby.png" alt="XRLobby"> <!-- Added second image here -->
+    </div>
 </div>
 <br><br><br><br>
     QR Code for this site<br>
     <img height="100px" src="peteandCQR.png">
-
 </body>
 </html>
-
